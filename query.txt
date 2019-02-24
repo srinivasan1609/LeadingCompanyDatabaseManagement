@@ -1,0 +1,28 @@
+CREATE TABLE loan_details_table(
+    member_id INT,
+    loan_amnt INT,
+    funded_amnt_inv INT,
+    term VARCHAR(20),
+    int_rate DOUBLE,
+    installment DOUBLE,
+    grade VARCHAR(20),
+    emp_title VARCHAR(20),
+    emp_length VARCHAR(20),
+    home_ownership VARCHAR(20),
+    annual_inc INT,
+    verification_status VARCHAR(20),
+    issue_d VARCHAR(20),
+    loan_status VARCHAR(20),
+    desc VARCHAR(20),
+    purpose VARCHAR(20),
+    title VARCHAR(20),
+    addr_state VARCHAR(20),
+    last_pymt_d VARCHAR(20),
+    last_pymt_amnt DOUBLE
+);
+
+CREATE TABLE sample(
+    member_id INT,
+    int_rate DOUBLE,
+    emp_title VARCHAR(20)
+);

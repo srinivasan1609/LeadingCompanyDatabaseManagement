@@ -1,0 +1,21 @@
+table {
+    
+    width: 90%;
+    align-content: center;
+    padding: 1%;
+    margin-left: 40px;
+    border-bottom: 5px solid #ddd;
+  }
+  .search-form-field {
+    width: 90%;
+    align-content: center;
+    margin-left: 40px;
+  }
+  td{
+    width: 45%;
+  }
+  th {
+    width: 45%;
+    padding: 10%;
+    
+  }
