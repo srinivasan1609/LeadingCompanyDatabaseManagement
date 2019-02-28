@@ -1,5 +1,4 @@
-<mat-toolbar color="primary">My App</mat-toolbar>
-<input type="file" ng2FileSelect [uploader]="uploader" accept=".csv">
+<mat-toolbar color="primary">Leading Comany Data Management</mat-toolbar>
 <mat-form-field class="search-form-field">
   <mat-icon matPrefix>search</mat-icon>
  <input matInput type="text" placeholder="Search" (keyup)="applyFilter($event.target.value)" [(ngModel)]="value">
@@ -8,7 +7,7 @@
  </button>
 </mat-form-field>
 <br>
-<button mat-raised-button color="primary" (click)="uploadSubmit()">Upload </button>
+<button mat-button class="upload-button" mat-button color="primary" (click)="openDialog()">Upload</button>
 <br>
 <table mat-table [dataSource]="dataSource"  class="mat-elevation-z8" matSort>
 
@@ -61,12 +60,12 @@
 
   <ng-container matColumnDef="emp-length">
     <th mat-header-cell *matHeaderCellDef>Employee length</th>
-    <td mat-cell *matCellDef="let element"> {{element.emplength}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.empLength}} </td>
   </ng-container>
 
   <ng-container matColumnDef="house-ownership">
     <th mat-header-cell *matHeaderCellDef>House Ownership </th>
-    <td mat-cell *matCellDef="let element"> {{element.emplength}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.homeOwnership}} </td>
   </ng-container>
 
   <ng-container matColumnDef="annual-inc">
@@ -111,12 +110,12 @@
 
   <ng-container matColumnDef="last-pymnt-date">
     <th mat-header-cell *matHeaderCellDef>Last Payment State</th>
-    <td mat-cell *matCellDef="let element"> {{element.lastPymntState}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.lastPymtDate}} </td>
   </ng-container>
 
   <ng-container matColumnDef="last-pymnt-amnt">
     <th mat-header-cell *matHeaderCellDef>Last Payment Amount</th>
-    <td mat-cell *matCellDef="let element"> {{element.lastPymntAmnt}} </td>
+    <td mat-cell *matCellDef="let element"> {{element.lastPymtAmt}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

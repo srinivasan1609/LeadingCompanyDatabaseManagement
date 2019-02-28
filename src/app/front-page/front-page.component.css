@@ -1,9 +1,24 @@
+
+.mat-header-cell{
+  justify-content: flex-end;
+  text-align: center;
+}
+.mat-cell{
+  justify-content: flex-end;
+  text-align: center;
+}
+.mat-column{
+  width: auto;
+}
+.mat-row{
+  height : auto;
+}
 table {
     
-    width: 90%;
+    width: 98%;
     align-content: center;
     padding: 1%;
-    margin-left: 40px;
+    margin: 15px;
     border-bottom: 5px solid #ddd;
   }
   .search-form-field {
@@ -18,4 +33,7 @@ table {
     width: 45%;
     padding: 10%;
     
+  }
+  .upload-button{
+    float : right;
   }

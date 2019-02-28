@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>File Upload</h1>
+<div mat-dialog-content>
+  <input type="file" ng2FileSelect [uploader]="uploader" accept=".csv">
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+  <button mat-button  (click)="uploadSubmit()" cdkFocusInitial>Upload</button>
+</div>

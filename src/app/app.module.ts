@@ -9,12 +9,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material-module';
 import { AppComponent } from './app.component';
 import { FrontPageComponent } from './front-page/front-page.component';
+import { FileUploadDialogComponent } from './front-page//file-upload-dialog/file-upload-dialog.component';
 import { ApiCallService } from './service/api-call.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     FrontPageComponent,
+    FileUploadDialogComponent,
     FileSelectDirective
   ],
   imports: [
@@ -29,6 +31,7 @@ import { ApiCallService } from './service/api-call.service';
     
   ],
   providers: [ApiCallService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [FileUploadDialogComponent]
 })
 export class AppModule { }
