@@ -1,4 +1,6 @@
 export interface loanDetailModel{
+    checked : boolean;
+    edit:boolean;
     memberId: number;
     loanAmount: number;
     fundedAmntInv: number;

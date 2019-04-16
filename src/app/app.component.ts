@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'leading-club-data-management';
+
+  @HostListener('scroll', ['$event']) 
+        scrollHandler(event) {
+          console.log("Scroll Event");
+        }
 }

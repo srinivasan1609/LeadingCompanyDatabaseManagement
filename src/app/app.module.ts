@@ -11,6 +11,10 @@ import { AppComponent } from './app.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { FileUploadDialogComponent } from './front-page//file-upload-dialog/file-upload-dialog.component';
 import { ApiCallService } from './service/api-call.service';
+import { ScrollEventModule } from 'ngx-scroll-event';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatSortModule } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +32,9 @@ import { ApiCallService } from './service/api-call.service';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
+    ScrollEventModule,
+    ScrollingModule,
+    MatSortModule
     
   ],
   providers: [ApiCallService],
